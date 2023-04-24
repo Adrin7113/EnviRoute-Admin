@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         hero: "url('/bg-hero.webp')",
       },
+      screens: { sm: { max: "750px" } },
     },
   },
   plugins: [],

@@ -51,18 +51,18 @@ const PatientLogs = () => {
             {list.map((value, i) => (
               <div
                 key={i}
-                className="bg-white border-[#AEC2B6] rounded-xl border-4 h-[125px] w-5/6 flex justify-between items-center p-5 gap-2"
+                className="bg-white  border-[#AEC2B6] sm:flex-col sm:justify-center sm:items-start rounded-xl border-4 sm:h-[425px] h-[125px] w-5/6 flex justify-between items-center p-5 gap-2"
               >
-                <div className="flex gap-5">
-                  <div className="w-56">
-                    <h1 className="text-3xl jose text-[#002B5B]">
+                <div className="flex gap-5 sm:flex-col sm:justify-center sm:items-start">
+                  <div className="w-56 ">
+                    <h1 className="text-3xl jose text-[#002B5B] sm:w-full">
                       {value.name}
                     </h1>
-                    <h1 className="text-3xl jose text-[#002B5B]">
+                    <h1 className="text-3xl jose text-[#002B5B] sm:w-full">
                       Age: {value.age}
                     </h1>
                   </div>
-                  <h1 className="text-3xl jose text-[#002B5B] bg-[#BBD6B8] p-3 rounded-xl h-max">
+                  <h1 className="text-3xl jose text-[#002B5B] bg-[#BBD6B8] p-3 rounded-xl h-max sm:w-2/3">
                     {value.hospital}
                   </h1>
                 </div>
