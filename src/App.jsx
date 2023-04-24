@@ -5,6 +5,7 @@ import Institute from "./pages/Institute";
 import Vendor from "./pages/Vendor";
 import PatientLogs from "./pages/PatientLogs";
 import Hospital from "./pages/Hospital";
+import Reports from "./pages/Reports";
 
 function App() {
   return (
@@ -57,6 +58,14 @@ function App() {
               element={
                 <>
                   <PatientLogs />
+                </>
+              }
+            />
+            <Route
+              path="/reports"
+              element={
+                <>
+                  <Reports />
                 </>
               }
             />

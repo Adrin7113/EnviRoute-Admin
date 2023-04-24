@@ -30,6 +30,11 @@ const Landing = () => {
             Patient Logs
           </button>
         </a>
+        <a href="/reports">
+          <button className="bg-[#BBD6B8] w-56 h-16 rounded-2xl jose text-3xl text-[#002B5B] hover:bg-[#AEC2B6] transition-all ease-in-out duration-300">
+            Reports
+          </button>
+        </a>
       </div>
     </div>
   );

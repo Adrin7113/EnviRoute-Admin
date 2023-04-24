@@ -18,13 +18,34 @@ const PatientLogs = () => {
     };
     onRender();
   }, []);
-
+  const handleSearch = async () => {
+    const { data, error } = await supabase
+      .from("Patients")
+      .select("*")
+      .eq("critical", true)
+      .order("id", { ascending: true });
+    if (error) {
+      console.log(error);
+    }
+    if (data) {
+      console.log(data);
+      setList(data);
+    }
+  };
   return (
     <>
       <div className="min-h-screen w-screen flex flex-col items-center gap-5 py-10">
         <h1 className="text-5xl jose text-[#002B5B] mb-10 underline  decoration-[#002B5B] underline-offset-[12px]">
           Patients
         </h1>
+        <button
+          onClick={() => {
+            handleSearch();
+          }}
+          className="bg-[#BBD6B8] w-1/3 h-16 rounded-xl jose text-3xl text-[#002B5B] hover:bg-[#AEC2B6] transition-all ease-in-out duration-300"
+        >
+          Critical
+        </button>
         {list && (
           <>
             {list.map((value, i) => (
