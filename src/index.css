@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*For Input Decoration Removal*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Same for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.jose {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*Scrollbar Hiding*/
+html::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
